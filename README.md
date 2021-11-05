@@ -8,13 +8,11 @@ A short lecture of blind-source separation algorithms with practical examples in
 ***
 ### Question 1
 #### Part A
-[Your report]
+![Eigen Values](problem_1A_eigVal0.jpg)
+![Eigen Vectors](problem_1A_eigVal.jpg)
 #### Part B
 The Matlab implementation:
 >> C = [[5,1];[1,2]]
-C =
-     5     1
-     1     2
 >> [vec,val]=eig(C)
 vec =
     0.2898   -0.9571
