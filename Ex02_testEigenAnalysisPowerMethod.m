@@ -44,3 +44,20 @@ C = C - mean(lambda2) * (v2 * v2');
 v3 = EigenAnalysisPowerMethod(C, v0, Itr);
 scale3 = (Cx*v3)./v3;
 lambda3 = mean(scale3)
+
+%% Question 1:
+% part 2: Check and compare your results with the “eig” function in MATLAB and report the values in your report
+C=[5 1; 1 2];
+[V,D]=eig(C)
+
+Itr = 100; % The number of power method iterations
+
+v0 = rand(2, 1);
+v1 = EigenAnalysisPowerMethod(C, v0, Itr);
+scale1 = (C*v1)./v1;
+lambda1 = mean(scale1)
+
+Cx = C - lambda1 .* (v1 * v1');
+v2 = EigenAnalysisPowerMethod(Cx, v0, Itr);
+scale2 = (Cx*v2)./v2;
+lambda2 = mean(scale2)
