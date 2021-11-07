@@ -8,3 +8,6 @@
 ![](Q1_2.jpg)
 #### Part B
 ![](Q1_B.png)
+
+### Question 2
+#### Part A
