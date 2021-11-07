@@ -24,8 +24,8 @@ Matlab calculation:
 
 The matlab calculated eigenvalues are almost exactly equal to my calculated eigenvalues. The matlab calculated eigenvectors are in the same ratio as my calculated vectors. 
 
-For example, v1 = (0.2989,-0.9571) in matlab and this ratio (v1,1 / v1,2) is equal to -0.3123 ... my calculated eigenvector is (-0.303,1) and this ratio is -0.303 . 
-…
+For example, v1 = (0.2989,-0.9571) in matlab and this ratio (v1,1 / v1,2) is equal to -0.3123 ... my calculated eigenvector is (-0.303,1) and this ratio is -0.303
+
 ***
 ### Question 2 (image files and code are in problem2 folder)
 #### Part A 
@@ -46,5 +46,13 @@ Plot of two entries in principal vector and leading eigenvalue for 1 to 20 itera
 
 ![Alt text](/problem2/hw11-problem2b.png?raw=true "Matlab Power Plot")
 
-… 
+***
+
+### Question 3
+#### Part A
+
+
+#### Part B
+
+
 ***
