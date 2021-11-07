@@ -23,10 +23,17 @@ val =
 
 Note the ratio of 0.9571/0.2898=3.3026 and 0.2898/0.9571=0.30279 are similar to the ratios we got (3.30278, and 0.302776). This is because the results are not unique but their ratio is.
 
+***
+### Question 2
+#### Part A
+>> v0 = rand(2, 1);
+>> v20 = EigenAnalysisPowerMethod([[5,1];[1,2]], v0, 20)
+v20 =
+    0.9571
+    0.2898
 
-#### Part C
-[Your report]
-…
+#### Part B
+
 ***
 ### Question 2
 #### Part A
