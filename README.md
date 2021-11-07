@@ -33,7 +33,36 @@ v20 =
     0.2898
 
 #### Part B
+This is an adaptation of Dr. Sameni's EigenAnalysisPowerMethod for N=20:
+```install
+[n,~] = size(A);
+v0 = rand(n,1);
 
+V = zeros(n,N);
+v = v0(:); % initial vector
+
+for k = 1 : N
+    v = A * v;
+    v = v / sqrt(v' * v);
+    V(:,k) = v;
+end
+
+
+%% Plotting
+figure(1)
+% plot(1:N,V(:,1:N))
+hold on
+for p=1:N
+    plot(V(:,p));
+    legend();
+end
+hold off
+title('The power method for Eigen');
+xlabel('lambda 2');
+ylabel('lambda 1');
+
+```
+![Power Method](Power_method.jpg)
 ***
 ### Question 2
 #### Part A
