@@ -4,4 +4,5 @@
 
 Question 1
 Part A
+![](Q1_1.jpg)
 
