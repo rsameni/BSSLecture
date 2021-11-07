@@ -5,4 +5,4 @@
 Question 1
 Part A
 ![](Q1_1.jpg)
-
+![](Q1_2.jpg)
