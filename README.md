@@ -9,3 +9,9 @@ A short lecture of blind-source separation algorithms with practical examples in
 ### Question 1  
 ##### Part A    
 <img src="Images/Q1A.jpg" alt="Question 1 Part A" width="600"/>  
+
+##### Part B  
+<img src="Images/Q1B.PNG" alt="Question 1 Part B" width="900"/>  
+As we can see that Part A and Part B have the same result.  
+  
+### Question 2
