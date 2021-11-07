@@ -7,5 +7,5 @@ A short lecture of blind-source separation algorithms with practical examples in
 ### Student Email: mhu58@emory.edu  
 ***
 ### Question 1  
-##### Part A  
-The Eigen Polynimial of matrix C is:  
+##### Part A    
+<img src="Images/Q1A.jpg" alt="Question 1 Part A" width="600"/>  
