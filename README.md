@@ -15,3 +15,6 @@
 #### Part B
 ![](Q2_B1.png)
 ![](Q2_B2.png)
+
+### Question 3
+#### Part A
