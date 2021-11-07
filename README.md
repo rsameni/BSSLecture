@@ -19,7 +19,7 @@ Eigenvalues and eignvectors calculated based on the eig matlab function and powe
 Below is updated code for the calculation of eigenvalues using the power method:
 ![q2p1](https://user-images.githubusercontent.com/64221087/140633022-87ae92a6-2f08-45da-a2d9-c64b607c2e46.JPG)
 #### Part B
-In order to export the principal vector iteration, the Eigen Analysis Power Method matlab function was updated and the principle vecots of each of the values: 
+In order to export the principal vector iteration, the Eigen Analysis Power Method matlab function was updated and the principle vectors of each of the values was plotted: 
 ![q2p2](https://user-images.githubusercontent.com/64221087/140633026-7793ddd5-9d5f-4ae5-801f-45cb7d9cd9d1.JPG)
 ***
 
