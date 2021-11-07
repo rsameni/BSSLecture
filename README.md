@@ -65,6 +65,18 @@ xlabel('lambda 2');
 ylabel('lambda 1');
 
 ```
+To run we give it an nxn matrix A and the iterations, in this case 20:
+```install
+>> A = [[5,1];[1,2]]
+A =
+     5     1
+     1     2
+>> V = SinaEigenAnalysisPowerMethod(A, N)
+V =
+    0.9571
+    0.2898
+
+```
 ![Power Method](Power_method.jpg)
 ***
 ### Question 2
