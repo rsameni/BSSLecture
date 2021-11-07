@@ -15,7 +15,7 @@ Eigenvalue calculation:
 
 Eigenvector calculation:
 
-![hw11-problem1a2](https://user-images.githubusercontent.com/51492274/140654258-8c5e8181-facd-42c6-93f8-60b9a9d693b9.png)
+![Alt text](/problem1/hw11-problem1a2.png?raw=true "Eigenvector Calculation")
 
 #### Part B
 Matlab calculation:
