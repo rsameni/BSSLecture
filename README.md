@@ -18,3 +18,5 @@ As we can see that Part A and Part B have the same result.
 #### Part A & B  
 Principle Eigenvalue: 5.3028  
 Principle Eigenvector: [0.9571, -0.2898]  
+<img src="Images/Q2BVector.jpg" alt="Question 2 Part B" width="500"/> 
+<img src="Images/Q2BValues.jpg" alt="Question 2 Part B" width="500"/> 
