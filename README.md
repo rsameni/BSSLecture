@@ -20,7 +20,7 @@ Eigenvector calculation:
 #### Part B
 Matlab calculation:
 
-![hw11-problem1b](https://user-images.githubusercontent.com/51492274/140654265-7678df6e-e86d-4dd1-af12-e9574c970caf.png)
+![Alt text](/problem1/hw11-problem1b.png?raw=true "Matlab Calculation")
 
 The matlab calculated eigenvalues are almost exactly equal to my calculated eigenvalues. The matlab calculated eigenvectors are in the same ratio as my calculated vectors. 
 
