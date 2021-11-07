@@ -25,10 +25,15 @@ In order to export the principal vector iteration, the Eigen Analysis Power Meth
 
 ### Question 3
 #### Part A
-[Your report]
-
+updated scripts are in the folder and commented: 
 #### Part B
-[Your report]
+- Code 1: Ex01_testPCA.m
+- Code 2: Ex02_Ex02_testEigenAnalysisPowerMethod.m
+The script was updated in question 2 where the eigenvalues of a C matrix were calculated. The updated scripts also has a plot of the principle vector calculation. 
+- Code 3: Ex03_testICAmethods.m
+- Code 4: Ex04_testEOGArtifactRemoval.m
+- Code 5: Ex05_testFetalECGExtraction.m
+- 
 ***
 
 ### Question 4
