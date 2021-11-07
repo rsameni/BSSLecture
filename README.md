@@ -36,13 +36,18 @@ The script was updated in question 2 where the eigenvalues of a C matrix were ca
 - Code 3: Ex03_testICAmethods.m
 
 - Code 4: Ex04_testEOGArtifactRemoval.m
+
 - Code 5: Ex05_testFetalECGExtraction.m
+
 ***
 
 ### Question 4
 #### Part A
-[Your report]
+ Choose one of the following papers and write a summary of the paper in 250 words or more
+including the pseudo-code of the BSS algorithm of the paper:
 
-#### Part B
-[Your report]
+The paper I choose is: Lu, Wei, and Jagath C. Rajapakse. "Approach and applications of constrained ICA." IEEE transactions on neural networks 16.1 (2005): 203-212. DOI: https://doi.org/10.1109/TNN.2004.836795 Constrained ICA with image processing applications
+
+Summary:
+
 ***
