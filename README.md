@@ -10,7 +10,7 @@ A short lecture of blind-source separation algorithms with practical examples in
 ### Question 1
 #### Part A
 Eigenvalue calculation:
-![alt text](https://github.com/hmumme/BSSLecture/blob/main/hw11-problem1a1.jpg?raw=true)
+![image](https://user-images.githubusercontent.com/51492274/140654150-86fca5e8-970e-457d-a3b7-e11603484480.png)
 #### Part B
 ...
 #### Part C
