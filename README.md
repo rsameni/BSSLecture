@@ -33,7 +33,6 @@ The script was updated in question 2 where the eigenvalues of a C matrix were ca
 - Code 3: Ex03_testICAmethods.m
 - Code 4: Ex04_testEOGArtifactRemoval.m
 - Code 5: Ex05_testFetalECGExtraction.m
-- 
 ***
 
 ### Question 4
