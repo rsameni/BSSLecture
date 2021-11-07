@@ -7,7 +7,7 @@ A short lecture of blind-source separation algorithms with practical examples in
 ### Student Name: Hope Mumme
 ### Student Email: hmumme@emory.edu
 ***
-### Question 1
+### Question 1 (image files also included in problem1 folder)
 #### Part A
 Eigenvalue calculation:
 
