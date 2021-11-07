@@ -13,5 +13,5 @@
 #### Part A
 ![](Q2_A1.png)
 #### Part B
-1[](Q2_B1.fig)
-1[](Q2_B2.fig)
+1[](Q2_B1.png)
+1[](Q2_B2.png)
