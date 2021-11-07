@@ -11,7 +11,7 @@ A short lecture of blind-source separation algorithms with practical examples in
 #### Part A
 Eigenvalue calculation:
 
-![Alt text](/problem1/hw11-problem1a1.jpg?raw=true "Eigenvalue Calculation")
+![Alt text](/problem1/hw11-problem1a1.png?raw=true "Eigenvalue Calculation")
 
 Eigenvector calculation:
 
