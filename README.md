@@ -27,7 +27,24 @@ The matlab calculated eigenvalues are almost exactly equal to my calculated eige
 For example, v1 = (0.2989,-0.9571) in matlab and this ratio (v1,1 / v1,2) is equal to -0.3123 ... my calculated eigenvector is (-0.303,1) and this ratio is -0.303 . 
 …
 ***
-### Question 2
-#### Part A
-...
+### Question 2 (image files and code are in problem2 folder)
+#### Part A 
+Eigenvalue calculation using power method:
+
+Code:
+
+![Alt text](/problem2/hw11-problem2a.png?raw=true "Matlab eigenvalue prediction")
+
+Results:
+
+lambda1 estimate = 5.3028
+
+lambda2 estimate = 1.6972
+
+#### Part B
+Plot of two entries in principal vector and leading eigenvalue for 1 to 20 iterations of power method:
+
+![Alt text](/problem2/hw11-problem2b.png?raw=true "Matlab Power Plot")
+
 … 
+***
