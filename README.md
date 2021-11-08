@@ -72,7 +72,7 @@ This script runs three different methods for independent component analysis, whi
 #### Ex04
 This script is used to remove electrooculographic (EOG) signals from EEG signals. EOG signals are treated as noise and JADE and NSCA methods are used for this procedure and results are compared. The script assumes that the electrode is picking up both EEG and EOG signals and their independence from each other. The script separates the signal from electrodes into different components, removes detected EOG and reconstructs a de-noised signal with the intended EEG signal.  The component selection for EOG is critical because when done right it is de-noising the EEG signal however with incorrectly selected components, it can remove essential parts of the EEG signal. The script also plots the reconstructed signals when JADE is utilized and when NSCA is utilized. We can see that there are differences between the two methods, so we can conclude that this is a delicate process and the optimal method should be used to remove the intended signals.
 #### Ex05
-
+This script is from OSET/testPrograms. The input data is ECG monitoring of fetus by having electrodes on the mother’s stomach. However, the input data has signals from both the fetus and the mother. The algorithm aims to separate fetal signals from the maternal signals. Many methods are used for blind source separation such as PCA, ICA, PiCA, FastICA, JADE and SOBI. The results from the signals all look similar to each other. It is difficult to assess which method provides the best separated fetal ECG, but from the plots it seems like PiCA method shows the least noisy signal compared to others.
 
 ***
 ### Question 4
