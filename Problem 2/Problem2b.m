@@ -13,7 +13,7 @@ for i = 1:20
     lambdav(i) = mean((C*output)./output);
 end
 
-% plot two entries of principal vector and leading eigenvalue for 20 it
+% plot two entries of principal vector and leading eigenvalu the 20 iterations specified
 plot(1:20,vec1)
 hold on
 plot(1:20,vec2)
