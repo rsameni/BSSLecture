@@ -74,3 +74,7 @@ In this example. The parameter we changed is the ECG signal with the signal sour
   
 ##### Ex02  
 This example shows us how to approximate the main eigenvalues ​​and eigenvectors of the signal through the power method. We observe the influence of the number of iterations on the approximation result of the power function method by changing the number of iterations. Found after observation. When the number of iterations is small, it has not yet converged, so the error of the calculated results may be relatively large. If there are too many iterations, it may have converged long ago. This will take too much calculation time. A better way is by setting a minimum error condition. Stop the iteration when the error is less than this threshold. In this way, the entire cycle can be precisely controlled.
+  
+##### Ex03
+In this example, we run SOBO,  FastICA,and JADE. The difference of performance is observed and compared. After going through some literature reviews, here is my the conclusion of their dofference: SOBI → gives the fastest result → with not much difference → also does not take too much memory. (this might be due to good implementation). (Fast ICA → good initialization is needed → also not stable). Fast ICA → heavily depends on the initialization → running time might be slow → but Fast ICA → can be parallel. (JADE → less memory). )SOBI → cannot be parallelized easily.  
+Reference: https://www.researchgate.net/publication/316940677_A_Comparison_of_SOBI_FastICA_JADE_and_Infomax_Algorithms
