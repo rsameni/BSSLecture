@@ -65,8 +65,9 @@ Here is the compressed signals from each channel:
 
 ![Alt text](/problem3/ex01/ex01-compressed.png?raw=true "ex01 compressed")
 
-
 #### Part B
+
+##### Ex01_testPCA.m Interpretation
 
 
 ***
