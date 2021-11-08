@@ -24,7 +24,7 @@ The columns of V present eigenvectors of A. The diagonal matrix D contains eigen
 ![image](https://user-images.githubusercontent.com/61863714/140797943-f5446c9a-0ea3-4851-be13-deac4ebdc244.png)
 
 From the diagonal matrix D, we can visually confirm that the manual and MATLAB computations of the two eigenvalues are equal to be 1.6972 and 5.3028.
-However, we need to confirm that the eigenvectors from MATLAB are within the null space vectors that are manually calculated. The confirmation is below:
+However, we need to confirm that the eigenvectors from MATLAB, [0.2898 -0.9571] and [-0.9571 -0.2898], are within the null space vectors that are manually calculated. The confirmation is below:
 
 ![image](https://user-images.githubusercontent.com/61863714/140797310-90d3a714-3f0b-4038-9117-b4da195dd91c.png)
 
@@ -41,7 +41,7 @@ The result is below:
 
 ![image](https://user-images.githubusercontent.com/61863714/140799091-f19289d2-efc6-4bcb-a308-52f3ea9643c4.png)
 
-From this calculation, we can conclude that by using the Power Method with 100 iterations calculated eigenvectors and eigenvalues are the same as the eig() function.
+From this calculation, we can conclude that by using the Power Method with 100 iterations calculated eigenvectors, [0.2898 -0.9571] and [-0.9571 -0.2898], and eigenvalues, 1.6972 and 5.3028, are the same as the eig() function.
 
 #### Part B
 I have manipulated the Ex02 m. file to calculate the eigenvalues and eigenvectors of the matrix 𝐶 = (5 1;1 2) by using the Power Method.
