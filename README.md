@@ -206,6 +206,9 @@ lambda3 =
     0.2980
 >> 
 ```
+##### Ex04:
+![Problem3B_Ex04](Problem3B_Ex04.jpg)
+
 ***
 #### Part B
 
@@ -220,3 +223,6 @@ I used the same dataset as in exercise 1. This script does 100 iterations for ca
 The Ex03_testICAmethods calculates the independent component analysis for the ECG dataset I have been working on. First baseline is removed using a low-pass filter and the raw signal is plotted. Then Fast ICA is performed. The approach used is ‘symm’ rather than ‘defl’ (similar to power method), the non-linear transformation is ‘tanh’, and iterative PCA is not used. In addition, the following Algebraic Blind source separation and approximate joint matrix diagonalization methods of JADE and SOBI are used. The Fast ICA, JADE and SOBI amplitude, sign and order of channels are different. 
 
 ##### Ex04:
+The Ex04_testEOGArtifactRemoval removes eye blinks from EEG signals. For this exercise I used the OSET EEGdata2. Unfortunately, I couldn’t get it to run due to an error using zeros in jadeR (line108). I’m not sure if the sampling frequency is different than 250 or if there is some other issue. On the other hand, using the EEGdata in the plot of “Welch Power Spectral Density Estimate” we see that the peak at low frequency (1-4Hz) is removed in the corrected line. The JADE ICA and NSCA methods are used in this script. 
+
+##### Ex05:
