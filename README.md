@@ -97,6 +97,7 @@ EOG reference channel and EOG envelope from channel 8:
 
 Denoised Signals:
 
+legend: blue = raw signal, red = JADE, yellow = NSCA
 ![Alt text](/problem3/ex04/ex04-denoised.png?raw=true "ex04 denoised")
 
 #### Part B
