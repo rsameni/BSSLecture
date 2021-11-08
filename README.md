@@ -143,4 +143,12 @@ I ran the demo testPCAICAPiCAfECGDenoising in this part of the analysis. The pur
 
 ### Question 4
 #### Part A
-Summary of the 
+Summary of “EEG signal classification using PCA, ICA, LDA and support vector machines” 
+
+Citation: 
+
+ Subasi, A., & Ismail Gursoy, M. (2010). EEG signal classification using PCA, ICA, LDA and support vector machines. Expert Systems with Applications, 37(12), 8659–8666. https://doi.org/10.1016/j.eswa.2010.06.065
+
+Summary:
+
+This paper used EEG signals to classify a signal as epileptic seizure or not an epileptic seizure. They used discrete wavelet transform (DWT) to extract the time and frequency information from the EEG signal, they used PCA, ICA, and LDA as dimensionality reduction methods to produce features, and they used SVM as the supervised machine learning classifier that used the features. The independent component analysis (ICA) part of the study can be summarized with the following steps (they did not provide any code, only method description); the authors used ICA to produce mutually independent components from the EEG signal. First, they assume that each signal c is independent, and they group all signals at t into vector x(t). This produces a multivariate density function which they then use to form an estimate, z(t), of the sources x(t) through determination of matrix A (dimensions c x d) by maximum-likelihood method. They estimate the density and find the parameter a that has the minimum difference between z(t) and x(t). The authors tried each dimensionality reduction method (PCA, ICA, LDA) with the SVM and found that the LDA and SVM combination produced the best performance of the predictive classifier (performance based on specificity and sensitivity). The training and testing splits were 50/50 with epileptic dataset having 800 total signals, and the normal dataset having 800 total signals. The PCA with SVM method produced a 98.75 % accuracy, 98.5 % specificity, and 99% sensitivity of the classifier. The ICA with SVM method produced a 99.5% accuracy, 99% specificity, and 100% sensitivity. The LDA and SVM method produced 100% accuracy, specificity, and sensitivity. Overall, the 3 feature extraction methods produced very similar results, but LDA method won overall.  
