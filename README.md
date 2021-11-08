@@ -22,11 +22,11 @@ A short lecture of blind-source separation algorithms with practical examples in
 …
 ***
 ### Question 3
-#### Part A
-[Your report]
-#### Part B
-[Your report]
-#### Part C
+#### Ex 01
+In the Ex01 script, the modification was made to the cut-off threshold for the eigenvalue. The aim of the script was to obtain compressed values for the signals from an EEG. The last column on ECG was more discrete than other channels. The channel means were first removed. followed by computing the covariance matrix, its eigenvalue decomposition, decorrelating the samples, choosing the number of eigenvalues to keep based on partial energy and total energies. Finally, based on the threshold, a compressed version of input channels was obtained and plotted. The default value was 99.9 and the values were varied as 90, 95, 98, 99, 99.9, 99.99 where the number of eigenvalues to keep changed to 2, 2, 5, 8, 19 and 24. The lower thresholds showed fewer fluctuations for compressed samples. With lower thresholds, the compressed values were almost a straight line without any fluctuations.
+#### Ex 02
+The Ex 02 script performs the eigenvalue computation using the Power method by implementing a custom function written by Dr. Sameni. The first step was to simulate a 3 channel signal with 1000 time points using normally distributed random variables. For the signals,  a covariance matrix was created. This covariance matrix underwent an eigenvalue decomposition by the closed-form calculation using the eig function versus the numerically calculated  eigenvectors and eigenvalues by power method. For the power method, the number of iteration, an initial guess (v0) and the covariance matrix were input. The step involved multiplying the matrix with v0 and dividing by the square root of v0 and transformed v0. The v is updated and is the initial vector for the next iteration. Iterating this for the specified iterations. In the case of the non-leading eigenvalues the difference of the covariance matrix with lambda 1 (leading eigenvalue ) and the product of v and transposed v from the previous step. 
+#### Ex 03
 [Your report]
 #### Part D
 [Your report]
