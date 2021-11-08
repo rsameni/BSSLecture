@@ -79,7 +79,7 @@ Predicted Eigenvalues from power method:
 
 Results from FastICA decomposition:
 
-![Alt text](/problem3/ex03/ex03-fastica.png?raw=true "ex03 fastICA")
+![Alt text](/problem3/ex03/ex03-fatsica.png?raw=true "ex03 fastICA")
 
 Results from JADE decompostion:
 
