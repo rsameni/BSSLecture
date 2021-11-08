@@ -226,3 +226,8 @@ The Ex03_testICAmethods calculates the independent component analysis for the EC
 The Ex04_testEOGArtifactRemoval removes eye blinks from EEG signals. For this exercise I used the OSET EEGdata2. Unfortunately, I couldn’t get it to run due to an error using zeros in jadeR (line108). I’m not sure if the sampling frequency is different than 250 or if there is some other issue. On the other hand, using the EEGdata in the plot of “Welch Power Spectral Density Estimate” we see that the peak at low frequency (1-4Hz) is removed in the corrected line. The JADE ICA and NSCA methods are used in this script. 
 
 ##### Ex05:
+ The Ex05_testFetalECGExtraction runs the OSET’s testPCAICAPiCAfECGExtraction where fetal ECG is extracted from maternal ECG using PCA, ICA JADE, SOBI, and PiCA method based on maternal peaks and fetal peaks. This shows the application of ICA in separating fetal ECG from maternal ECG.  Uncommenting the testECGICAPCAPiCAPlot1 from OSET and running it after low-pass filtering calculates the JADE, ICA and PiCA and plots the raw, ICA, PCA and PiCA.  This script runs the s0010_re.txt, which could be from the PTB database patient 1 record. 
+ 
+ ***
+### Question 4
+#### Part A
