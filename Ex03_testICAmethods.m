@@ -37,7 +37,7 @@ switch example
         period = 76.0;
         s3 = (mod(1:len, 76.0) - period/2)/(period/2);
         A = rand(3);
-        noise = 0.01*randn(3, len);
+        noise = 0.1*randn(3, len); %<-- changed here 
         x = A * [s1 ; s2 ; s3] + noise;
     otherwise
         error('unknown example');
@@ -54,7 +54,7 @@ approach = 'symm'; % 'symm' or 'defl'
 g = 'tanh'; % 'pow3', 'tanh', 'gauss', 'skew'
 lastEigfastica = N; % PCA stage
 numOfIC = N; % ICA stage
-interactivePCA = 'off';
+interactivePCA = 'off'; %<-- when we change this line we get asked about the index of the largest eigenvalue to keep
 [s_fastica, A_fatsica, W_fatsica] = fastica (x, 'approach', approach, 'g', g, 'lastEig', lastEigfastica, 'numOfIC', numOfIC, 'interactivePCA', interactivePCA, 'verbose', 'off', 'displayMode', 'off');
 
 % Check the covariance matrix
@@ -67,7 +67,7 @@ s_jade = W_JADE * x;
 
 % Run SOBI
 lastEigSOBI = N; % PCA stage
-num_cov_matrices = 100;
+num_cov_matrices = 50; %<-- changed here
 [W_SOBI, s_sobi] = sobi(x, lastEigSOBI, num_cov_matrices);
 
 % Plot the sources

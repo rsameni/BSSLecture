@@ -13,8 +13,8 @@
 %
 
 % Uncomment the following lines to run advanced demos
-testPCAICAPiCAfECGExtraction % Call this demo from the OSET package
-% testECGICAPCAPiCAPlot1
+ testPCAICAPiCAfECGExtraction % Call this demo from the OSET package
+%testECGICAPCAPiCAPlot1
 % testECGICAPCAPiCAPlot1
 % testAveragefECGbyDeflationAndKF
 % testICAPiCAAfterMECGCancellation % (using the deflation algorithm + Kalman filter)
