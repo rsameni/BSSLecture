@@ -40,3 +40,32 @@ D =
     1.6972         0
          0    5.3028
 ```
+
+### Question 2
+#### Part A
+Matlab code using the original EigenAnalysisPowerMethod function:
+```matlab
+% Calculate eigenvalues using the Power Method
+Itr = 50;
+v0 = rand(2, 1);
+v1 = EigenAnalysisPowerMethod(C, v0, Itr);
+scale1 = (C*v1)./v1;
+lambda1 = mean(scale1);
+
+Cx = C - lambda1 * (v1 * v1');
+v2 = EigenAnalysisPowerMethod(Cx, v0, Itr);
+scale2 = (C*v2)./v2;
+lambda2 = mean(scale2);
+```
+
+Output:
+```
+lambda1 =
+
+    5.3028
+
+
+lambda2 =
+
+    1.6972
+```
