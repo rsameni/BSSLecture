@@ -22,7 +22,8 @@ Code for questions 1 and 2 are included in Huang_HW11.m
 The values from the hand calculation vs the MATLAB eig function are equivalent. 
 ***
 ### Question 3
-#### Part A
+Altered scripts are included with \_Huang.m
+#### Part A and B
 ##### Example 1: testPCA.m
 I changed the cutoff threshold from 99.9 to 95 to observe the change in signal. 
 
@@ -34,10 +35,13 @@ I changed the number of iterations for the power method from 100 to 10. With onl
 
 Example 2 performs eigenvalue decomposition by using the Power Method approximation of eigenvalues and eigenvectors. First, a random signal is created that has 3 inputs and 1000 time points. The covariance matrix is calculated and then eigen values and vectors are extracted using the MATLAB eig function for comparison. Then EVD is performed using the Power Method through 100 iterations. 
 ##### Example 3: testICAmethods.m
-I changed the script to apply the three ICA methods on the EEGdata rather than the synthetically produced data. The differences between the three algorithms are more apparent on the EEG channel data. 
+I changed the script to apply the three ICA methods on the ECGdata rather than the synthetically produced data. The differences between the three algorithms are more apparent on the EEG channel data. 
 ![image](https://user-images.githubusercontent.com/64104699/140812753-52e85408-a5da-4d5a-baf2-066d7b633208.png)
 
 This example implements and compares three different algorithms for independent component analysis (ICA). The three approaches are FastICA, JADE, and SOBI; the results of each of the three methods are plotted and compared for sample ECG data. ICA is a computational method which separates linearly mixed multivariate signals transforming it into another set where the components are the independent and approximate of the original signal. FastICA searches for the components one by one with whitening performed on the data first; this method is very fast and is possible to implement in a parallel fashion, but it may require more computational memory. The SOBI algorithm uses second order statistics and first whitening is performed, then computation of lagged correlation matrices, and finally joint diagonalization. JADE performs similar steps as SOBI using both whitening and joint diagonalization but on fourth order signals; this method is temporally disadvantageous, however it is memory efficient. The results from the three algorithms on the given example look similar with the differences being more apparent in channels 2 and 3. 
 ![image](https://user-images.githubusercontent.com/64104699/140812067-46a038f9-7c9f-4404-995c-7b66721b762b.png)
 ##### Example 4: testEOGArtifactRemoval.m
-Example 4 removes EOG artifacts from EEG signals
+I changed the script to apply the example on the EEGdata2 rather than EEGdata1. 
+
+Example 4 removes EOG (electro-oculugram) signals from the EEG signal. The EOG artifacts arise from eye-blinks that occur during the EEG data acqusition. The two types of denoising algorithms it compares are JADE and NSCA for removing the EOG artifact. The principle is that the EOG and true EEG signals are separable to individual components in each electrode and the artifactual signal can be removed. The signal coming from the EOG should be weaker than the EEG. After applying the algorithms only the EEG signal should be left. The example plots the denoised singlas from both JADE and NSCA and compares them; they show different results, and from a qualitative evaulation it appears that NSCA removes more of the signal while JADE is more conservative. 
+##### Example 5: testFetalECGExtraction.m
