@@ -50,6 +50,20 @@ Plot of two entries in principal vector and leading eigenvalue for 1 to 20 itera
 
 ### Question 3
 #### Part A
+I chose to analyze the following file in the OSET repository: OSET/Databases/TokarevData/signal_01.mat , from the fetal cardiac signals database.
+
+##### Ex01_testPCA.m Results
+The data contained signal from 8 channels at a sampling frequency of 1000 Hz. Here is the raw signal:
+
+![Alt text](/problem3/ex01/ex01-raw.png?raw=true "ex01 Raw")
+
+Here are the eigenvalues in linear and log scale from the covariance matrix of the input signal:
+
+![Alt text](/problem3/ex01/ex01-eigenvalue.png?raw=true "ex01 eigenvalues")
+
+Here is the compressed signals from each channel:
+
+![Alt text](/problem3/ex01/ex01-compressed.png?raw=true "ex01 compressed")
 
 
 #### Part B
