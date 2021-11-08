@@ -65,3 +65,9 @@ Principle Eigenvalue: 5.3028
 Principle Eigenvector: [0.9571, -0.2898]  
 <img src="Images/Q2BVector.jpg" alt="Question 2 Part B" width="500"/> 
 <img src="Images/Q2BValues.jpg" alt="Question 2 Part B" width="500"/> 
+  
+### Question 3  
+#### Part A & B  
+The changes are made directly on the original files.  
+###### Ex01  
+In this example. The parameter we changed is the ECG signal with the signal source changed from one to two. We compressed the signal through principal component analysis. First, a low-pass filter removes the low-pass component of the signal and makes the average value of all signal channels become zero. Then we calculated the covariance matrix of the signal and extracted the eigenvalues ​​and eigenvectors. By sorting the eigenvalues, we use a threshold to retain only the eigenvalues ​​with the most information. The compressed data still retains most of the information of the original signal.
