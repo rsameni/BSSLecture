@@ -135,6 +135,12 @@ The same raw signal of the 8 channel ECG is used in Ex03 analysis. The code runs
 
 The same raw signal of the 8 channel ECG is used in Ex04 analysis. The code runs JADE and NSCA as methods to denoise the input signal. It first extracts the sources using JADE like in Ex03, then multiplies the sources from jade by the mixing matrix calculated using the inverse of the jadeR output. For the NSCA (non-stationary component analysis) algorithm, the code uses the NSCA function from OSET to calculate the sources and then the denoised signal from NSCA. The EOG reference channel plot above shows an example of the reference channel (blue), envelope (orange), and detection threshold (yellow) used in calculating the denoised signal from NSCA in channel 1. The denoised signals from JADE (red) and NSCA (yellow) along with the raw signal (blue) are plotted above. From the plot, we can see that the NSCA and JADE mostly have similar denoising outputs, except in channels 2, 4, 7, and 8. At some points the NSCA signal is positive when the JADE and raw signals are negative. This could affect the signal analysis downstream. Also, in channel 2, the NSCA signal has lower overall amplitude than the JADE signal.  
 
+##### Ex05_testFetalECGExtraction_MUMME.m Interpretation  
 
+I ran the demo testPCAICAPiCAfECGDenoising in this part of the analysis. The purpose of this demo is to compare denoising methods’ results on the multichannel fetal ECG. The code of this demo can be found in OSET/testPrograms directory. The code first outputs the fetal and maternal R-peak detection and plots red circles where it estimates the peaks to be. It does very well at estimating the R-peaks in this snapshot of the signal for both fetal and maternal ECGs. It uses these detected peaks when applying the denoising methods. For the PiCA method, the code inputs the data with the detected fetal peaks (from PeakDetection function) into the PiCA function. The sources are found and applied to the signal to produce the denoised signal. For the JADE and SOBI methods, fetal peaks are not used but the sources produced by the methods are used to denoise the fetal ECG signal. The results shown above are of the denoised signal from PiCA, JADE, and SOBI. Overall, the signals from each method look similar, with the JADE method producing the clearest signal with least noise.  
 
 ***
+
+### Question 4
+#### Part A
+Summary of the 
