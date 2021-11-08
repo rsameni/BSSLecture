@@ -75,7 +75,8 @@ Predicted Eigenvalues from power method:
 
 ![Alt text](/problem3/ex02/ex02-predictedE.png?raw=true "ex02 predicted eigenvalues")
 
-##### Ex03_
+##### Ex03_testICAMethods_MUMME.m Results (images in problem3/ex03/ folder)
+
 
 #### Part B
 
