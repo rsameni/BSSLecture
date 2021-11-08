@@ -45,10 +45,6 @@ Results prior to reduction :
 Results after reduction : ![image](https://user-images.githubusercontent.com/90157048/140822591-a1475da2-d856-4301-b139-21f2faccadbf.png)
 In Ex02 , lambda 1 and 2 have increased. However, the values on the diagonal  of the eigenvalues and eigenvectors. 
 
-EX03 
-E04
-Ex05
-
 
 
 
