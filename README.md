@@ -63,7 +63,17 @@ I have revised (by change of parameters or input signals and adding comments) an
 The edited m-files Ex01 to Ex05 are commited to this fork.
 
 #### Part B
-[Your report] 
+#### Ex01
+testPCA method in this Matlab script is used to reduce components from the original data and compressing the data by extracting the most prominent features to best represent the data. Depending on the PCA threshold, the reduced component signal gets closer or further away from the original data. The method calculates covariance matrix, and gets all eigenvalues and eigenvectors, while eventually keeping the most descriptive eigenvalues. Functionality of this function, PCA in general, is that by using the most representative features, we can get a signal very close to the original signal for efficiency in computing.
+#### Ex02
+This script calculates the eigenvalues and eigenvectors of a matrix by using the power method. As the number of iterations increase, the result from the power function gets closer to the actual eigenvalues and eigenvectors of the matrix, and at some iteration converges to these values. After convergence, the power method approximation of all values remain constant, no matter how many more iterations are performed. Functionality of this function arises from its efficiency, especially compared to the eig() function in Matlab. However, excessive iterations after convergence can reduce this efficiency. 
+#### Ex03
+This script runs three different methods for independent component analysis, which are FactICA, SOBI and JADE and by applying these methods on an EEG dataset, compares the results. Independent component analysis is an essential method for compressing signals by extracting dominant features and keeping the compressed signal close to the original signal with all features, while increasing efficiency. The independent component analysis results from all three methods looks similar when comparing the most important features, where in the top ranks the order changes but the selected signals are the same. And the resulting compressed data is very similar to the original data.
+#### Ex04
+This script is used to remove electrooculographic (EOG) signals from EEG signals. EOG signals are treated as noise and JADE and NSCA methods are used for this procedure and results are compared. The script assumes that the electrode is picking up both EEG and EOG signals and their independence from each other. The script separates the signal from electrodes into different components, removes detected EOG and reconstructs a de-noised signal with the intended EEG signal.  The component selection for EOG is critical because when done right it is de-noising the EEG signal however with incorrectly selected components, it can remove essential parts of the EEG signal. The script also plots the reconstructed signals when JADE is utilized and when NSCA is utilized. We can see that there are differences between the two methods, so we can conclude that this is a delicate process and the optimal method should be used to remove the intended signals.
+#### Ex05
+
+
 ***
 ### Question 4
 #### Part A
