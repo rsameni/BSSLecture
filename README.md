@@ -77,6 +77,17 @@ Predicted Eigenvalues from power method:
 
 ##### Ex03_testICAMethods_MUMME.m Results (images in problem3/ex03/ folder)
 
+Results from FastICA decomposition:
+
+![Alt text](/problem3/ex03/ex03-fastica.png?raw=true "ex03 fastICA")
+
+Results from JADE decompostion:
+
+![Alt text](/problem3/ex03/ex03-jade.png?raw=true "ex03 JADE")
+
+Results from SOBI decomposition:
+
+![Alt text](/problem3/ex03/ex03-sobi.png?raw=true "ex03 SOBI")
 
 #### Part B
 
