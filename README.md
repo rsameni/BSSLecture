@@ -126,3 +126,18 @@ legend('1st entry vector', '2st entry vector', 'Leading eigenvalue');
 Output:
 
 ![](/Figures/Q2_partB.jpg)
+
+### Question 3
+#### Part A
+* ```Ex01_testPCA.m```: Changed the example parameter from 1 to 2. The input signal is SampleECG2.
+* ```Ex02_testEigenAnalysisPowerMethod.m``` 
+* ```Ex03_testICAmethods.m``` 
+* ```Ex04_testEOGArtifactRemoval.m``` 
+* ```Ex05_testFetalECGExtraction.m``` 
+
+#### Part B
+* ```Ex01_testPCA.m```: This code receives a 15 channel ECG signal as an input. This signal is then filtered to reduce the low frequency noise, and normalized by making all channels have a zero mean. The eigenvalues and eigenvectors of this preprocessed signal are calculated using the covariance matrix. Then, the code analyses which are the most significative eigenvalues, and outputs a compressed version for each raw channel based on a determined threshold, which in this case is 99.9. There is one plot for each channel displaying the raw signal and the compressed version; however, they are very similar and it is difficult to identify them. Therefore, the threshold used for the PCA in this example did not result in the loss of important information.
+* ```Ex02_testEigenAnalysisPowerMethod.m``` 
+* ```Ex03_testICAmethods.m``` 
+* ```Ex04_testEOGArtifactRemoval.m``` 
+* ```Ex05_testFetalECGExtraction.m``` 
