@@ -1,3 +1,7 @@
+% Code and comments edited by Gulay Bengu Ulukaya
+% For BMI 500 Week 11 Assignment
+% 11/8/2021
+%
 % Principal component analysis
 %
 % BMI500 Course
@@ -20,13 +24,13 @@ example = 1;
 switch example
     case 1 % Load a sample EEG signal
         load EEGdata textdata data % A sample EEG from the OSET package
-        fs = 250;
+        fs = 25; %changed from 250 to 25
         x = data'; % make the data in (channels x samples) format
         % Check the channel names
         disp(textdata)
     case 2 % Load a sample ECG signal
         load SampleECG2 data % A sample ECG from the OSET package
-        fs = 1000;
+        fs = 100; %changed from 1000 to 100
         x = data(:, 2:end)'; % make the data in (channels x samples) format
         x = x - LPFilter(x, 1.0/fs); % remove the lowpass baseline
     otherwise
