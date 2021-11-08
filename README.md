@@ -52,7 +52,7 @@ Plot of two entries in principal vector and leading eigenvalue for 1 to 20 itera
 #### Part A
 I chose to analyze the following file in the OSET repository: OSET/Databases/TokarevData/signal_01.mat , from the fetal cardiac signals database.
 
-##### Ex01_testPCA.m Results
+##### Ex01_testPCA_MUMME.m Results
 The data contained signal from 8 channels at a sampling frequency of 1000 Hz. Here is the raw signal:
 
 ![Alt text](/problem3/ex01/ex01-raw.png?raw=true "ex01 Raw")
@@ -65,9 +65,17 @@ Here is the compressed signals from each channel:
 
 ![Alt text](/problem3/ex01/ex01-compressed.png?raw=true "ex01 compressed")
 
+##### Ex02_testEigenAnalysisPowerMethod_MUMME.m Results
+
 #### Part B
 
 ##### Ex01_testPCA.m Interpretation
+Acutal Eigenvalues from covariance matrix of input signal channels:
 
+![Alt text](/problem3/ex02/ex02-actualE.png?raw=true "ex02 actual eigenvalues")
+
+Predicted Eigenvalues from power method:
+
+![Alt text](/problem3/ex02/ex02-predictedE.png?raw=true "ex02 predicted eigenvalues")
 
 ***
