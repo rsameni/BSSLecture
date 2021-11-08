@@ -10,9 +10,7 @@ Code for questions 1 and 2 are included in Huang_HW11.m
 ***
 ### Question 1
 #### Part A
-
-*insert photo*
-
+![image](https://user-images.githubusercontent.com/64104699/140809087-dede1c15-848b-4241-84aa-880c59679ced.png)
 ### Part B
 ![image](https://user-images.githubusercontent.com/64104699/140745544-dfa82532-3243-4c08-9bea-9d9b4d412d8e.png)
 ***
@@ -21,6 +19,7 @@ Code for questions 1 and 2 are included in Huang_HW11.m
 ![image](https://user-images.githubusercontent.com/64104699/140755258-89cebc07-6fea-43e4-b4eb-5838d30c9b60.png)
 ### Part B
 ![image](https://user-images.githubusercontent.com/64104699/140758491-7811add4-2841-462a-859a-c4fcf187a3d4.png)
+The values from the hand calculation vs the MATLAB eig function are equivalent. 
 ***
 ### Question 3
 #### Part A
