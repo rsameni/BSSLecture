@@ -217,3 +217,6 @@ The Ex02_testEigenAnalysisPowerMethod calculates the eigenvalues using the power
 I used the same dataset as in exercise 1. This script does 100 iterations for calculating the eigens and reports the top three lambdas. For the previous problem, problem 2, I edited the function to iterate through 20 values and plotted vectors representing the two top eigenvalues. In the plot and the values we see as the number of iterations increase the values of the lambdas become more accurate and closer to matlab’s eig function. 
 
 ##### Ex03:
+The Ex03_testICAmethods calculates the independent component analysis for the ECG dataset I have been working on. First baseline is removed using a low-pass filter and the raw signal is plotted. Then Fast ICA is performed. The approach used is ‘symm’ rather than ‘defl’ (similar to power method), the non-linear transformation is ‘tanh’, and iterative PCA is not used. In addition, the following Algebraic Blind source separation and approximate joint matrix diagonalization methods of JADE and SOBI are used. The Fast ICA, JADE and SOBI amplitude, sign and order of channels are different. 
+
+##### Ex04:
