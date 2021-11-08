@@ -231,3 +231,5 @@ The Ex04_testEOGArtifactRemoval removes eye blinks from EEG signals. For this ex
  ***
 ### Question 4
 #### Part A
+ Sameni et al. (2008),  “Multichannel Electrocardiogram Decomposition Using Periodic Component Analysis.” have presented Periodic Component Analysis (PiCA).  Since the assumption of constant fundamental period in ICA is not true for ECG signals there is a need for a different component analysis method. In the proposed method a heartbeat varying period is proposed that gets updated on beat-to-beat basis.
+ 
