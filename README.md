@@ -1,5 +1,4 @@
 # BSS Lecture Codes
-## Reza Sameni
 ## Emory University Department of Biomedical Informatics
 
 A short lecture of blind-source separation algorithms with practical examples in Matlab
@@ -45,3 +44,10 @@ I changed the script to apply the example on the EEGdata2 rather than EEGdata1.
 
 Example 4 removes EOG (electro-oculugram) signals from the EEG signal. The EOG artifacts arise from eye-blinks that occur during the EEG data acqusition. The two types of denoising algorithms it compares are JADE and NSCA for removing the EOG artifact. The principle is that the EOG and true EEG signals are separable to individual components in each electrode and the artifactual signal can be removed. The signal coming from the EOG should be weaker than the EEG. After applying the algorithms only the EEG signal should be left. The example plots the denoised singlas from both JADE and NSCA and compares them; they show different results, and from a qualitative evaulation it appears that NSCA removes more of the signal while JADE is more conservative. 
 ##### Example 5: testFetalECGExtraction.m
+There was no place to alter the parameters or test on a different dataset for this example. Rather than running the original ECG extraction, I tested the ECG denoising using the BSS and semi-BSS method. 
+
+This example tests different methods (PiCA, JADE, SOBI) of denoising on the fetal ECG data. The fetal data is acquired via ECG electrodes from the mother, therefore the data consists of fetal ECG signal as well as the mother's ECG signal. The data is decomposed using PCA, then denoising algorithms are applied and compared. The PiCA method detects the fetal peaks and uses them as inputs for the denoising algorithm. JADE and SOBI are based only on the maternal peak signal without using fetal peaks as input before the denoising. Qualitatively looking at the results of the denoised fetal ECG it appears that SOBI may be slightly noisier than JADE or PiCA.
+***
+### Question 4
+#### Part A: Lu, Wei, and Jagath C. Rajapakse. "Approach and applications of constrained ICA." _IEEE transactions on neural networks_ 
+##### Summary
