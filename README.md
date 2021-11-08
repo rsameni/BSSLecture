@@ -45,6 +45,13 @@ Results prior to reduction :
 Results after reduction : ![image](https://user-images.githubusercontent.com/90157048/140822591-a1475da2-d856-4301-b139-21f2faccadbf.png)
 In Ex02 , lambda 1 and 2 have increased. However, the values on the diagonal  of the eigenvalues and eigenvectors. 
 
+***
+### Question 4
+#### Part A
+The article selected is EG signal classification using PCA, ICA, LDA and support vector machines. The authors aimed to address the issue of complexity, fluctuation and the need for doctors to evaluate the EGG signals. The authors created a signal processing and analysis framework for Electroencephalogram (EEG).  The signals were decomposed into the frequency sub-bands using Discrete wavelet transform (DWT). The sub-bands to represent the distribution of wavelet coefficients was also used to extract features. Their data was reduced using Principal Component Analysis and linear discriminant analysis. With the dimension reduced the authors, used the features and an input for a support vector machine with epileptic seizure or not as the output. 
+***
+
+
 
 
 
