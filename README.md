@@ -8,7 +8,8 @@ A short lecture of blind-source separation algorithms with practical examples in
 ***
 ### Question 1
 #### Part A
-Image of handwritten calculation of eigenvalues and eigenvectors:![q1p1](https://user-images.githubusercontent.com/64221087/140610263-2ec08f55-c7d7-4ab1-8ec7-b355457eeef9.JPG)
+Image of handwritten calculation of eigenvalues and eigenvectors:!![q1p1](https://user-images.githubusercontent.com/64221087/140815124-d2035bab-2925-44c9-8e6c-868ac3a11204.JPG)
+
 #### Part B
 Eigenvalues and eignvectors calculated based on the eig matlab function and power method for eigenvalue decomposition. The test below was added to the E02_testEigenAnalysisPowerMethod.m Matlab script:
 ![q1p2](https://user-images.githubusercontent.com/64221087/140633004-f3a5ab57-d168-479d-81d0-20435f292591.JPG)
@@ -34,11 +35,14 @@ In the updated code I changed the sampling frequency and used another samole ECG
 - Code 2: Ex02_Ex02_testEigenAnalysisPowerMethod.m
 The script was updated in question 2 where the eigenvalues of a C matrix were calculated. The updated scripts also has a plot of the principle vector iteration for each of the values. 
 - Code 3: Ex03_testICAmethods.m
-
+This code used the different Independent component analysis using classical methods. Based on the resulted figures we see that the signal, the order, and the amplitude of the 3 methods are different, which is what we would expect since non of these methods can guarantee the order, the sign, nor the amplitude of the signal. 
+We see very good results with the different methods but usually Jade is good for  noisy data. 
+Two things I tested in this code is when changing the interavtivePCA from off to on we get to choose which eigenvalue to use by entering the index. Another thing i change is the amount of noise from small amount of 0.01 to 0.1 noise to see how Jade which method will be the best with noisy data. After looking at the figure below we see jade resolve the noise from the signal in a better mannar than the other methods. 
+![JadeNoise](https://user-images.githubusercontent.com/64221087/140817896-5232e1ce-9458-4a6e-80a2-9b45f8694efd.JPG)
 - Code 4: Ex04_testEOGArtifactRemoval.m
-
+This code tested the removing of the EOG artifact using Jade and NSCA. Both methods show very good results for the denoising of each channel. For this specific code I decided to test the different parameters of NSCA (nonstationary component analysis) by changing J desired time windows to be less than the threshold and i also observed how the welch power spectral changed. 
 - Code 5: Ex05_testFetalECGExtraction.m
-
+This code was very intersting testing the fetal ECG extration using different ICA algorithms. The difference between Pseudo-Periodic Component Analysis in fetal and maternal fetal based was intersting to analyze. I also tested the rest of the demos. 
 ***
 
 ### Question 4
