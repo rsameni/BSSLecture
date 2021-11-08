@@ -130,14 +130,14 @@ Output:
 ### Question 3
 #### Part A
 * ```Ex01_testPCA.m```: Changed the example parameter from 1 to 2. The input signal is SampleECG2.
-* ```Ex02_testEigenAnalysisPowerMethod.m``` 
+* ```Ex02_testEigenAnalysisPowerMethod.m```: Changed iterations to 50 and then 15. Commented the code. 
 * ```Ex03_testICAmethods.m``` 
 * ```Ex04_testEOGArtifactRemoval.m``` 
 * ```Ex05_testFetalECGExtraction.m``` 
 
 #### Part B
 * ```Ex01_testPCA.m```: This code receives a 15 channel ECG signal as an input. This signal is then filtered to reduce the low frequency noise, and normalized by making all channels have a zero mean. The eigenvalues and eigenvectors of this preprocessed signal are calculated using the covariance matrix. Then, the code analyses which are the most significative eigenvalues, and outputs a compressed version for each raw channel based on a determined threshold, which in this case is 99.9. There is one plot for each channel displaying the raw signal and the compressed version; however, they are very similar and it is difficult to identify them. Therefore, the threshold used for the PCA in this example did not result in the loss of important information.
-* ```Ex02_testEigenAnalysisPowerMethod.m``` 
+* ```Ex02_testEigenAnalysisPowerMethod.m```: This code finds the eigenvalues and eigenvectors using the eig built-in MATLAB function and the power method for eigenvalue decomposition. Both of them are applied on a random signal for which the covariance was previously calculated with the cov function. To analyze this code, I compared the results obtained with the MATLAB function, which are the ground truth, to the results obtained with the power methods, which are an approximation. First, I changed the number of iterations to 50 to see how good the approximation was. The three obtained eigenvalues were extremely similar to the ground truth, which shows that reducing the number of iterations to 50 can still produce satisfactory results. Last, I changed the number of iterations to 15 and the obtained eigenvalues were far from the ground truth. We can conclude that the incrementing the number of iterations results in better approximations.  
 * ```Ex03_testICAmethods.m``` 
 * ```Ex04_testEOGArtifactRemoval.m``` 
 * ```Ex05_testFetalECGExtraction.m``` 
