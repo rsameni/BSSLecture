@@ -46,13 +46,15 @@ Results after reduction :
 ![image](https://user-images.githubusercontent.com/90157048/140825871-37a11bb1-c8c8-4913-8ce9-bb529b4113d4.png)
 
 In Ex02 , lambda 1 and 2 have increased. However, the values on the diagonal  of the eigenvalues and eigenvectors. 
+In EX03, the number of matrices was decreased to 50 but no changes occured. In Ex04 and Ex05 The analysis was quite interesting to see. 
 
 ***
 ### Question 4
 #### Part A
-The article selected is EG signal classification using PCA, ICA, LDA and support vector machines. The authors aimed to address the issue of complexity, fluctuation and the need for doctors to evaluate the EGG signals. The authors created a signal processing and analysis framework for Electroencephalogram (EEG).  The signals were decomposed into the frequency sub-bands using Discrete wavelet transform (DWT). The sub-bands to represent the distribution of wavelet coefficients was also used to extract features. Their data was reduced using Principal Component Analysis and linear discriminant analysis. With the dimension reduced the authors, used the features and an input for a support vector machine with epileptic seizure or not as the output. 
+The article selected is EG signal classification using PCA, ICA, LDA and support vector machines. The authors aimed to address the issue of complexity, fluctuation and the need for doctors to evaluate the EGG signals. The authors created a signal processing and analysis framework for Electroencephalogram (EEG).  The signals were decomposed into the frequency sub-bands using Discrete wavelet transform (DWT). The sub-bands to represent the distribution of wavelet coefficients was also used to extract features. Their data was reduced using Principal Component Analysis and linear discriminant analysis. With the dimension reduced the authors, used the features and an input for a support vector machine with epileptic seizure or not as the output. The authors found that although observing seizures can be difficult, the improvemnt of current approaches such as SVM can be beneficial. "SVMs can serveas a promising alternative for intelligent diagnosis system"(Subasi & Ismail Gursoy, 2010). 
 ***
-
+#### Reference 
+Subasi, A., & Ismail Gursoy, M. (2010). EEG signal classification using PCA, ICA, LDA and support vector machines. Expert Systems with Applications, 37(12), 8659–8666. https://doi.org/10.1016/j.eswa.2010.06.065
 
 
 
