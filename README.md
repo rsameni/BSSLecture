@@ -89,6 +89,16 @@ Results from SOBI decomposition:
 
 ![Alt text](/problem3/ex03/ex03-sobi.png?raw=true "ex03 SOBI")
 
+##### Ex04_testEOGArtifactRemoval_MUMME.m Results (images in problem3/ex04/ folder)
+
+EOG reference channel and EOG envelope from channel 8:
+
+![Alt text](/problem3/ex04/ex04-ref.png?raw=true "ex04 ref")
+
+Denoised Signals:
+
+![Alt text](/problem3/ex04/ex04-denoised.png?raw=true "ex04 denoised")
+
 #### Part B
 
 ##### Ex01_testPCA.m Interpretation
