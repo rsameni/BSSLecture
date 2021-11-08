@@ -28,7 +28,7 @@ The results are the same.
 ***
 ### Question 3
 #### Part A
-#EX01
+EX01
 ![image](https://user-images.githubusercontent.com/90157048/140822354-ae981e68-8e88-46f6-b741-b65bd85805b8.png)
 ![image](https://user-images.githubusercontent.com/90157048/140822371-e1c61a13-2477-43f6-9f4c-c9058e5d279a.png)
 ![image](https://user-images.githubusercontent.com/90157048/140822419-a7383082-64ac-4dfd-aacc-e67509bb58ec.png)
@@ -36,7 +36,7 @@ The results are the same.
 In ex01, a change was made in the cut off threshold for the eigenvalues. It was reduced significantly from 99.9 to 50 .Interestingly changing the cut off threshold for the eigenvalues did not cause significant changes the results. Changes can however be seen in the results columns where numerous columns were populated with the value of zero. It is important to note that 1 extra channel was computed but the compressed data is no longer visible!
 
 ***
-#Ex02
+Ex02
 
 Changes were made in the in the number of iterations, reducing it 50 . 
 Results prior to reduction : 
@@ -45,9 +45,9 @@ Results prior to reduction :
 Results after reduction : ![image](https://user-images.githubusercontent.com/90157048/140822591-a1475da2-d856-4301-b139-21f2faccadbf.png)
 In Ex02 , lambda 1 and 2 have increased. However, the values on the diagonal  of the eigenvalues and eigenvectors. 
 
-#EX03 
-#E04
-#Ex05
+EX03 
+E04
+Ex05
 
 
 
