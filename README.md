@@ -10,6 +10,7 @@ A short lecture of blind-source separation algorithms with practical examples in
 ### Question 1
 #### Part A
 ![](/Figures/Q1_partA_1.jpg)
+![](/Figures/Q1_partA_2.jpg)
 
 ### Part B
 Matlab code:
@@ -69,3 +70,5 @@ lambda2 =
 
     1.6972
 ```
+
+#### Part B
