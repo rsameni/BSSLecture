@@ -9,16 +9,22 @@ A short lecture of blind-source separation algorithms with practical examples in
 ***
 ### Question 1
 #### Part A
-[Your report]
+![A test image1](Pg1.jpeg)
+![A test image2](Pg2.jpeg)
+![A test image3](Pg4.jpeg)
 #### Part B
-[Your report]
-#### Part C
-[Your report]
+The values were similar upto the 4th decimal point for the eigenvalues. The ratio of eigenvectors obtained from the eig function has been compared in the notes above.
 …
 ***
 ### Question 2
 #### Part A
-[Your report]
+![A test image4](Satpathy_HW11_mat1.png)
+![A test image5](Satpathy_HW11_mat2.png)
+The lambda 1 and lamda 2 were obtained with iterations = 100 and the C matrix defined above in Q1. The results were similar.
+#### Part B 
+![A test image6](Satpathy_V1.png)
+![A test image7](Satpathy_V2.png)
+![A test image8](Satpathy_eigen.png)
 …
 ***
 ### Question 3
@@ -27,10 +33,10 @@ In the Ex01 script, the modification was made to the cut-off threshold for the e
 #### Ex 02
 The Ex 02 script performs the eigenvalue computation using the Power method by implementing a custom function written by Dr. Sameni. The first step was to simulate a 3 channel signal with 1000 time points using normally distributed random variables. For the signals,  a covariance matrix was created. This covariance matrix underwent an eigenvalue decomposition by the closed-form calculation using the eig function versus the numerically calculated  eigenvectors and eigenvalues by power method. For the power method, the number of iteration, an initial guess (v0) and the covariance matrix were input. The step involved multiplying the matrix with v0 and dividing by the square root of v0 and transformed v0. The v is updated and is the initial vector for the next iteration. Iterating this for the specified iterations. In the case of the non-leading eigenvalues the difference of the covariance matrix with lambda 1 (leading eigenvalue ) and the product of v and transposed v from the previous step. 
 #### Ex 03
-[Your report]
-#### Part D
-[Your report]
-#### Part E
+The Ex 03 script performs compares three ICA methods Fastsica, JADE and SOBI. The input dataset by default was the simulated dataset for 3 channels. However, for better understanding the textbook EEG data was also implemented. In terms of the implementation, JADE and SOBI are similar in taking only the PCA stage. The Fastica algorithm needs the input about the deccorelation approach  (symmetric or deflated), and the non-linearity approach (the implementation used tanh) and number of ICA stages. JADE and Fastsica gave similar sources which is sinusoidal curve with lower and higher frequency for 1 and 2 and a linear fluctuating increase and a sharp drop in signal for channel 3. The FASTICA output changed with change in the non-linearity approach. None of the four non-linearity approach gave sources similar to JADE and SOBI. The inferences for the simulated data was easier to make and the sources obtained gave closed form functions, However, the EEG data was very cluttered. 
+#### Ex 04
+The script  Ex 04 s used to remove EOG signals from EEG signals. JADE and NSCA methods are used for removing the EOG noise and results are compared. The independence of EOG and EEG are evaluated. followed by separating the signal different components , removing the noise and making a signal without noise with the intended EEG signal.  The reconstructed signals when JADE and NSCA were utilized were plotted.
+#### Ex 05
 [Your report]
 
 …
