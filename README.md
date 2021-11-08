@@ -207,3 +207,9 @@ lambda3 =
 >> 
 ```
 ***
+#### Part B
+
+##### Ex01:
+The Ex01_testPCA does principal component analysis on a physiological signal. I chose patient 1 record s0014lre of the Physionet PTB database. First baseline is removed using a low pass filter. Then raw signals are plotted. Then channel means are removed to correct the baseline. The demeaned signal is then plotted. The eigenvectors and eigenvalues are calculated using the matlab eig function. Then using the eigenvectors the signal is decorrelated and plotted. In addition, the partial energy in each eigenvalue is calculated and the ones that represent 99.9 % energy are kept. 
+
+##### Ex02:
