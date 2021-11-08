@@ -117,6 +117,10 @@ Fetal Results from PiCA, JADE, SOBI:
 
 #### Part B
 
-##### Ex01_testPCA.m Interpretation
+I used the fetal cardiac signal database from OSET TokarevData contains cardiac signals from 8 channels. I input the ECG signal_01.m data into the test scripts from the BSSLecture Repository. Here are my interpretations of the functionality of the code and the results. 
+
+##### Ex01_testPCA_MUMME.m Interpretation
+
+From the raw signal of the 8 channel ECG, we see 8 sets of data with the same time span, but with different ranges of amplitudes. There doesn’t seem to be any common time (s) along the x-axis of where the ECG peaks are located among the 8 channels. The testPCA code removes the channel means and calculates the covariance of the de-meaned matrix. This is used to calculate the eigenvalues of the 8 channel dataset, one per channel. From the eigenvalues plotted in log scale, we can see that the eigenvalues rapidly decrease with increasing index in the covariance matrix (increasing channel number). These eigenvalues are used to form a compressed version of the data (red shows the compressed signal, blue shows the raw signal). The PCA compression doesn’t seem to have much of an effect, the raw and compressed signals are mostly overlapping.  
 
 ***
