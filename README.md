@@ -131,4 +131,10 @@ The same demeaned matrix from ex01 is used to create the covariance matrix in ex
 
 The same raw signal of the 8 channel ECG is used in Ex03 analysis. The code runs FastICA, JADE, and SOBI to test different independent component analysis (ICA) methods ability at deconstructing the ECG signal. The ICA deconstruction of the data was calculated using the fastica function from Matlab, the JADE deconstruction was calculated using the jadeR function from Matlab, and the SOBI deconstruction was calculated using the sobi function from Matlab. The sources extracted by each method are plotted above for comparison. Overall, FastICA and SOBI sources seem to be similar, with JADE sources being different from the other two methods. Channels 4,7,8 seem to produce the clearest and least-noisy extracted sources in all methods. The JADE method looks to do the worst job at deconstructing in channels 1, 2, 6, with the extracted signal being very noisy.  
 
+##### Ex04_testEOGArtifactRemoval_MUMME.m Interpretation 
+
+The same raw signal of the 8 channel ECG is used in Ex04 analysis. The code runs JADE and NSCA as methods to denoise the input signal. It first extracts the sources using JADE like in Ex03, then multiplies the sources from jade by the mixing matrix calculated using the inverse of the jadeR output. For the NSCA (non-stationary component analysis) algorithm, the code uses the NSCA function from OSET to calculate the sources and then the denoised signal from NSCA. The EOG reference channel plot above shows an example of the reference channel (blue), envelope (orange), and detection threshold (yellow) used in calculating the denoised signal from NSCA in channel 1. The denoised signals from JADE (red) and NSCA (yellow) along with the raw signal (blue) are plotted above. From the plot, we can see that the NSCA and JADE mostly have similar denoising outputs, except in channels 2, 4, 7, and 8. At some points the NSCA signal is positive when the JADE and raw signals are negative. This could affect the signal analysis downstream. Also, in channel 2, the NSCA signal has lower overall amplitude than the JADE signal.  
+
+
+
 ***
