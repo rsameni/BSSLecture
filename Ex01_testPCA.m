@@ -30,7 +30,7 @@ switch example
         inPath = 'ptbdb/patient001/s0014lre';
         [data, fs, tm] = rdsamp(inPath, 1:14);
 
-        x = data(:, 2:end)'; % make the data in (channels x samples) format
+        x = data(:, 1:end)'; % make the data in (channels x samples) format
         x = x - LPFilter(x, 1.0/fs); % remove the lowpass baseline
     otherwise
         error('unknown example');
