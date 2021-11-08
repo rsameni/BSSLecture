@@ -210,6 +210,10 @@ lambda3 =
 #### Part B
 
 ##### Ex01:
-The Ex01_testPCA does principal component analysis on a physiological signal. I chose patient 1 record s0014lre of the Physionet PTB database. First baseline is removed using a low pass filter. Then raw signals are plotted. Then channel means are removed to correct the baseline. The demeaned signal is then plotted. The eigenvectors and eigenvalues are calculated using the matlab eig function. Then using the eigenvectors the signal is decorrelated and plotted. In addition, the partial energy in each eigenvalue is calculated and the ones that represent 99.9 % energy are kept. 
+The Ex01_testPCA does principal component analysis on a physiological signal. I chose patient 1 record s0014lre of the Physionet PTB database. First baseline is removed using a low pass filter. Then raw signals are plotted. Then channel means are removed to correct the baseline. The demeaned signal is then plotted. The eigenvectors and eigenvalues are calculated using the matlab eig function. Then using the eigenvectors the signal is decorrelated and plotted. In addition, the partial energy in each eigenvalue is calculated and the ones that represent 99.9 % energy are kept, in my dataset’s case there were the top 6 eigenvalues.
 
 ##### Ex02:
+The Ex02_testEigenAnalysisPowerMethod calculates the eigenvalues using the power method. 
+I used the same dataset as in exercise 1. This script does 100 iterations for calculating the eigens and reports the top three lambdas. For the previous problem, problem 2, I edited the function to iterate through 20 values and plotted vectors representing the two top eigenvalues. In the plot and the values we see as the number of iterations increase the values of the lambdas become more accurate and closer to matlab’s eig function. 
+
+##### Ex03:
