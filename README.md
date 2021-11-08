@@ -124,4 +124,5 @@ legend('1st entry vector', '2st entry vector', 'Leading eigenvalue');
 ```
 
 Output:
+
 ![](/Figures/Q2_partB.jpg)
