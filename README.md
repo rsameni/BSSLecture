@@ -105,7 +105,15 @@ legend: blue = raw signal, red = JADE, yellow = NSCA
 
 Results from testPCAICAPiCAfECGDenoising demo:
 
+Maternal and Fetal R peak detection:
 
+![Alt text](/problem3/ex05/ex05-fetal.png?raw=true "ex05 fetal") ![Alt text](/problem3/ex05/ex05-maternal.png?raw=true "ex05 maternal")
+
+Fetal Results from PiCA, JADE, SOBI:
+
+![Alt text](/problem3/ex05/ex05-fetal_denoised.png?raw=true "ex05 fetal PiCA")
+![Alt text](/problem3/ex05/ex05-fetal_jade.png?raw=true "ex05 fetal JADE")
+![Alt text](/problem3/ex05/ex05-fetal_sobi.png?raw=true "ex05 fetal SOBI")
 
 #### Part B
 
