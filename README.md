@@ -1,7 +1,14 @@
-# 
-###Name:Rajpreet Kaur
-###Email:rajpreet.kaur@emory.edu
-## Emory University Department of Biomedical Informatics
 
-A short lecture of blind-source separation algorithms with practical examples in Matlab
-[Part A](https://github.com/kaurrj/BSSLecture/blob/main/Screen%20Shot%202021-11-09%20at%2010.57.34%20AM.png)
+####Name:Rajpreet Kaur
+####Email:rajpreet.kaur@emory.edu
+
+***Question 1
+####[Part A](https://github.com/kaurrj/BSSLecture/blob/main/IMG_419018816AAE-1.jpeg)
+####Part B: Eig values were- 1.6972 and 5.3028
+***Question2
+####[Part A](https://github.com/kaurrj/BSSLecture/blob/main/Screen%20Shot%202021-11-09%20at%209.55.59%20AM.png)
+####[Part B](https://github.com/kaurrj/BSSLecture/blob/main/Screen%20Shot%202021-11-09%20at%2010.57.34%20AM.png)
+
+***Question 3: I ran all the exercises with different samples. I am not sure exactly what I am expected to write for this question. Ex04 and Ex05 did not work for me even after I installed signal processing toolkit 
+
+####Question 4-This paper offers a set of adaptive algorithms for source separation that use an adaptive version of equivariant estimation and are referred to as equivariant adaptive separation via independence (EASI). The EASI algorithms are built around the concept of serial updating: This particular type of matrix update produces algorithms with a basic structure for both real and complex mixes. Most crucially, an EASI algorithm's performance is independent of the mixing matrix. Convergence rates, stability criteria, and interference rejection levels, in particular, are solely determined by the (normalized) distributions of the source signals. An asymptotic performance analysis is used to provide closed-form equations for these values. Throughout the text, the idea of equivariance is emphasized. The fundamental multiplicative structure of the source separation issue is as follows: the parameter space forms a (matrix) multiplicative group. We investigate the (favorable) implications of this fact on the implementation, performance, and optimization of EASI algorithms. This paper presented a class of equivariant adaptive algorithms for blind separation of n independent sources. The'serial updating' rule (4) defines this class, and a specific serial algorithm in this class is specified by the specification of a vector-to-matrix mapping H(.) such that matrix EH(y) = 0 when vector y contains independent components. The simple mechanism of serial updating ensures the highly sought attribute of 'uniform performance.' Uniform performance for adaptive algorithms means that altering the mixing matrix is comparable to changing the initial condition.As a result, the properties of a serial algorithm, such as the stability criteria, convergence rates, or residual errors, are independent of the mixing matrix, allowing the method to be tuned and optimized once for all combinations.The overarching idea of this study is that when updating matrices, special rules that have no counterpart for a generic adaptive system with an unstructured vector of parameters may be addressed. The multiplicative character of the source separation issue accounts for this peculiarity.
