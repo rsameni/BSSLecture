@@ -16,7 +16,7 @@ clc
 clear
 close all
 
-example = 2;
+example = 3;
 switch example
     case 1 % A sample EEG from the OSET package
         load EEGdata textdata data % Load a sample EEG signal

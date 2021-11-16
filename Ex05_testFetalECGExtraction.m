@@ -16,6 +16,6 @@
 testPCAICAPiCAfECGExtraction % Call this demo from the OSET package
 % testECGICAPCAPiCAPlot1
 % testECGICAPCAPiCAPlot1
-testAveragefECGbyDeflationAndKF
+% testAveragefECGbyDeflationAndKF
 % testICAPiCAAfterMECGCancellation % (using the deflation algorithm + Kalman filter)
 % testPCAICAPiCAfECGDenoising % (denoising using BSS and semi-BSS methods)

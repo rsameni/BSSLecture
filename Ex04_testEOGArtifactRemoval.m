@@ -20,7 +20,7 @@ example = 1;
 switch example
     case 1 % A sample EEG from the OSET package
         load EEGdata textdata data % Load a sample EEG signal
-        fs = 220;
+        fs = 250;
         x = data'; % make the data in (channels x samples) format
         % Check the channel names
         disp(textdata)
