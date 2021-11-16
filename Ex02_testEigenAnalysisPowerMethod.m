@@ -17,19 +17,10 @@ clear
 clc;
 
 % Build a random signal
-% N = 3;
-% T = 1000;
-% a = randn(1, N);
-% x = diag(a) * randn(N, T);
-
-inPath = 'ptbdb/patient001/s0014lre';
-[data, fs, tm] = rdsamp(inPath, 1:14);
-
-x = data(:, 1:end)'; % make the data in (channels x samples) format
-N = size(x, 1); % The number of channels
-T = size(x, 2); % The number of samples per channel
-
-
+N = 3;
+T = 1000;
+a = randn(1, N);
+x = diag(a) * randn(N, T);
 % Cx = x * x';
 Cx = cov(x');
 

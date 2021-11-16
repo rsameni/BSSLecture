@@ -21,11 +21,9 @@ switch example
     case 1 % A sample EEG from the OSET package
         load EEGdata textdata data % Load a sample EEG signal
         fs = 250;
-        x = data';
-%         x = data([1:15 31], :)'; % make the data in (channels x samples) format
+        x = data'; % make the data in (channels x samples) format
         % Check the channel names
-%         disp(x)
-        
+        disp(textdata)
     otherwise
         error('unknown example');
 end
