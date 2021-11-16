@@ -17,9 +17,8 @@ clear
 clc;
 
 % Build a random signal
-% Add the dimension of the signal N=5, t= 1500
-N = 5;
-T = 1500;
+N = 3;
+T = 1000;
 a = randn(1, N);
 x = diag(a) * randn(N, T);
 % Cx = x * x';
@@ -45,14 +44,3 @@ C = C - mean(lambda2) * (v2 * v2');
 v3 = EigenAnalysisPowerMethod(C, v0, Itr);
 scale3 = (Cx*v3)./v3;
 lambda3 = mean(scale3)
-
-% Calculate eigen value 4,5
-C = C - mean(lambda3) * (v3 * v3');
-v4 = EigenAnalysisPowerMethod(C, v0, Itr);
-scale4 = (Cx*v4)./v4;
-lambda4 = mean(scale4)
-
-C = C - mean(lambda4) * (v4 * v4');
-v5 = EigenAnalysisPowerMethod(C, v0, Itr);
-scale5 = (Cx*v5)./v5;
-lambda5 = mean(scale5)

@@ -16,7 +16,7 @@ clc
 clear
 close all
 
-example = 2;
+example = 3;
 switch example
     case 1 % A sample EEG from the OSET package
         load EEGdata textdata data % Load a sample EEG signal
@@ -50,7 +50,7 @@ T = size(x, 2); % The number of samples per channel
 PlotECG(x, 4, 'b', fs, 'Raw data channels');
 
 % Run fastica
-approach = 'defl'; % 'symm' or 'defl'
+approach = 'symm'; % 'symm' or 'defl'
 g = 'tanh'; % 'pow3', 'tanh', 'gauss', 'skew'
 lastEigfastica = N; % PCA stage
 numOfIC = N; % ICA stage
@@ -67,8 +67,7 @@ s_jade = W_JADE * x;
 
 % Run SOBI
 lastEigSOBI = N; % PCA stage
-% change the number of covariance matrices.
-num_cov_matrices = 20;
+num_cov_matrices = 100;
 [W_SOBI, s_sobi] = sobi(x, lastEigSOBI, num_cov_matrices);
 
 % Plot the sources

@@ -42,10 +42,10 @@ s_jade = W_JADE * x;
 A_jade = pinv(W_JADE); % The mixing matrix
 
 % Plot the sources
-% PlotECG(s_jade, 10, 'k', fs, 'Sources extracted by JADE');
+% PlotECG(s_jade, 4, 'k', fs, 'Sources extracted by JADE');
 
 % Channel denoising by JADE
-eog_channel = [2 3 6]; % check from the plots to visually detect the EOG
+eog_channel = [2 3]; % check from the plots to visually detect the EOG
 s_jade_denoised = s_jade;
 s_jade_denoised(eog_channel, :) = 0;
 x_denoised_jade = A_jade * s_jade_denoised;
@@ -63,11 +63,8 @@ J = eog_envelope >= eog_detection_threshold;
 I = 1 : T;
 
 [s_nsca, W_nsca, A_nsca] = NSCA(x,J, I);
-% PlotECG(s_nsca, 10, 'k', fs, 'Sources extracted by NSCA');
-
 % Channel denoising by JADE
-%change channels based on visualization
-eog_channel = [1 2 3 21]; % check from the plots to visually detect the EOG
+eog_channel = [1 2]; % check from the plots to visually detect the EOG
 s_nsca_denoised = s_nsca;
 s_nsca_denoised(eog_channel, :) = 0;
 x_denoised_nsca = A_nsca * s_nsca_denoised;
