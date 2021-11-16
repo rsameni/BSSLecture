@@ -16,7 +16,7 @@ clc
 clear
 close all
 
-example = 1;
+example = 2;
 switch example
     case 1 % Load a sample EEG signal
         load EEGdata textdata data % A sample EEG from the OSET package
@@ -25,9 +25,12 @@ switch example
         % Check the channel names
         disp(textdata)
     case 2 % Load a sample ECG signal
-        load SampleECG2 data % A sample ECG from the OSET package
-        fs = 1000;
-        x = data(:, 2:end)'; % make the data in (channels x samples) format
+%         load SampleECG2 data % A sample ECG from the OSET package
+%         fs = 1000;
+        inPath = 'ptbdb/patient001/s0014lre';
+        [data, fs, tm] = rdsamp(inPath, 1:14);
+
+        x = data(:, 1:end)'; % make the data in (channels x samples) format
         x = x - LPFilter(x, 1.0/fs); % remove the lowpass baseline
     otherwise
         error('unknown example');
