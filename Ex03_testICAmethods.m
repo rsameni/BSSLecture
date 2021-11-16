@@ -50,8 +50,8 @@ T = size(x, 2); % The number of samples per channel
 PlotECG(x, 4, 'b', fs, 'Raw data channels');
 
 % Run fastica
-approach = 'symm'; % 'symm' or 'defl'
-g = 'tanh'; % 'pow3', 'tanh', 'gauss', 'skew'
+approach = 'defl'; % 'symm' or 'defl'
+g = 'gauss'; % 'pow3', 'tanh', 'gauss', 'skew'
 lastEigfastica = N; % PCA stage
 numOfIC = N; % ICA stage
 interactivePCA = 'off';
