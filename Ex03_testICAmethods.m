@@ -67,7 +67,7 @@ s_jade = W_JADE * x;
 
 % Run SOBI
 lastEigSOBI = N; % PCA stage
-num_cov_matrices = 5; %original is 100, changed by Frank to 5 to see what would happen
+num_cov_matrices = 100;
 [W_SOBI, s_sobi] = sobi(x, lastEigSOBI, num_cov_matrices);
 
 % Plot the sources
