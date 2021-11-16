@@ -16,7 +16,7 @@ clc
 clear
 close all
 
-example = 2;
+example = 1;
 switch example
     case 1 % Load a sample EEG signal
         load EEGdata textdata data % A sample EEG from the OSET package
@@ -85,8 +85,8 @@ Cy_trace = trace(Cy)
 % partial energy in eigenvalues
 x_partial_energy = 100.0 * cumsum(D(end : -1 : 1))./x_total_energy
 
-% set a cut off threshold for the eigenvalues： we test different thresholds
-th = 90;
+% set a cut off threshold for the eigenvalues
+th = 99.9;
 N_eigs_to_keep = find(x_partial_energy <= th, 1, 'last')
 
 % find a compressed version of x

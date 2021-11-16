@@ -67,9 +67,7 @@ s_jade = W_JADE * x;
 
 % Run SOBI
 lastEigSOBI = N; % PCA stage
-
-%We test different size of the cov matrices
-num_cov_matrices = 1000;
+num_cov_matrices = 100;
 [W_SOBI, s_sobi] = sobi(x, lastEigSOBI, num_cov_matrices);
 
 % Plot the sources

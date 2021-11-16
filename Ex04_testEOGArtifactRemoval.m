@@ -57,9 +57,7 @@ energy_envelope_len = round(0.25*fs);
 eog_envelope = sqrt(filtfilt(ones(1, energy_envelope_len), energy_envelope_len, eog_ref.^2));
 med = median(eog_envelope);
 mx = max(eog_envelope);
-
-%We test different noise thresholds
-eog_detection_threshold = 0.9 * med + 0.1 * mx;
+eog_detection_threshold = 0.95 * med + 0.05 * mx;
 
 J = eog_envelope >= eog_detection_threshold;
 I = 1 : T;
