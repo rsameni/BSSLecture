@@ -1,7 +1,3 @@
-% Code and comments edited by Gulay Bengu Ulukaya
-% For BMI 500 Week 11 Assignment
-% 11/8/2021
-%
 % The power method for eigenvalue decomposition
 %
 % BMI500 Course
@@ -32,8 +28,7 @@ Cx = cov(x');
 % Read 'eig' help and compare with 'eigs'
 [V,D] = eig(Cx)
 
-Itr = 150; %Number of iterations changed from 100 to 150
-% The number of power method iterations
+Itr = 100; % The number of power method iterations
 
 v0 = rand(N, 1);
 v1 = EigenAnalysisPowerMethod(Cx, v0, Itr);

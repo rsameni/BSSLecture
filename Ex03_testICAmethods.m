@@ -1,7 +1,3 @@
-% Code and comments edited by Gulay Bengu Ulukaya
-% For BMI 500 Week 11 Assignment
-% 11/8/2021
-%
 % Independent component analysis using classical methods
 %
 % BMI500 Course
@@ -41,7 +37,7 @@ switch example
         period = 76.0;
         s3 = (mod(1:len, 76.0) - period/2)/(period/2);
         A = rand(3);
-        noise = 0.01*randn(3, len); %noise increased by increasing constant multiplier from 0.01 to 0.05
+        noise = 0.01*randn(3, len);
         x = A * [s1 ; s2 ; s3] + noise;
     otherwise
         error('unknown example');
