@@ -59,7 +59,7 @@ med = median(eog_envelope);
 mx = max(eog_envelope);
 eog_detection_threshold = 0.95 * med + 0.05 * mx;
 
-J = eog_envelope > eog_detection_threshold;%<-- change here
+J = eog_envelope >= eog_detection_threshold;
 I = 1 : T;
 
 [s_nsca, W_nsca, A_nsca] = NSCA(x,J, I);
@@ -90,5 +90,5 @@ for ch = 1 : N
 end
 
 % Run the following script from the OSET package for a more advanced method
-% testEOGRemoval
+testEOGRemoval
 

@@ -19,14 +19,14 @@ close all
 example = 1;
 switch example
     case 1 % Load a sample EEG signal
-        load EEGdata textdata data % A sample EEG from the OSET package 
-        fs = 50; %<--changes here 
+        load EEGdata textdata data % A sample EEG from the OSET package
+        fs = 250;
         x = data'; % make the data in (channels x samples) format
         % Check the channel names
         disp(textdata)
     case 2 % Load a sample ECG signal
-        load SampleECG1kHz2 data % A sample ECG from the OSET package %<--changes here 
-        fs = 100;%<--changes here 
+        load SampleECG2 data % A sample ECG from the OSET package
+        fs = 1000;
         x = data(:, 2:end)'; % make the data in (channels x samples) format
         x = x - LPFilter(x, 1.0/fs); % remove the lowpass baseline
     otherwise
@@ -48,7 +48,7 @@ x_demeaned = x - mean(x, 2) * ones(1, size(x, 2));
 % Covariance matrix of the input
 Cx = cov(x_demeaned')
 
-% Eigenvalue decomposition: COMPUTE THE EIGENVECTORS AND EIGENVALUES OF THE COVARIANCE MATRIX TO IDENTIFY THE PRINCIPAL COMPONENTS
+% Eigenvalue decomposition
 [V, D] = eig(Cx, 'vector');
 
 figure
