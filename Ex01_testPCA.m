@@ -16,11 +16,11 @@ clc
 clear
 close all
 
-example = 1;
-switch example
+example = 2; %example originally set to 1, both example 1 and example 2 were run by Frank C for purposes of this assignment
+switch example 
     case 1 % Load a sample EEG signal
         load EEGdata textdata data % A sample EEG from the OSET package
-        fs = 250;
+        fs = 50; % originally 250, changed to 50 by Frank C for purposes of this assignment
         x = data'; % make the data in (channels x samples) format
         % Check the channel names
         disp(textdata)
