@@ -28,23 +28,19 @@ Cx = cov(x');
 % Read 'eig' help and compare with 'eigs'
 [V,D] = eig(Cx)
 
-Itr = 15; % The number of power method iterations
+Itr = 100; % The number of power method iterations
 
-% Find leading eigenvalue and corresponding eigenvector
 v0 = rand(N, 1);
 v1 = EigenAnalysisPowerMethod(Cx, v0, Itr);
 scale1 = (Cx*v1)./v1;
 lambda1 = mean(scale1)
 
-% Find second eigenvalue and corresponding eigenvector
 C = Cx - lambda1 * (v1 * v1');
 v2 = EigenAnalysisPowerMethod(C, v0, Itr);
 scale2 = (Cx*v2)./v2;
 lambda2 = mean(scale2)
 
-% Find third eigenvalue and corresponding eigenvector
 C = C - mean(lambda2) * (v2 * v2');
 v3 = EigenAnalysisPowerMethod(C, v0, Itr);
 scale3 = (Cx*v3)./v3;
 lambda3 = mean(scale3)
-

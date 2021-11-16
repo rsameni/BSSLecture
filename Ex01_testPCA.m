@@ -16,7 +16,7 @@ clc
 clear
 close all
 
-example = 2;
+example = 1;
 switch example
     case 1 % Load a sample EEG signal
         load EEGdata textdata data % A sample EEG from the OSET package
@@ -33,8 +33,8 @@ switch example
         error('unknown example');
 end
 
-N = size(x, 1) % The number of channels
-T = size(x, 2) % The number of samples per channel
+N = size(x, 1); % The number of channels
+T = size(x, 2); % The number of samples per channel
 
 % Plot the channels
 PlotECG(x, 4, 'b', fs, 'Raw data channels');
