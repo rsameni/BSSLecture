@@ -13,8 +13,8 @@
 %
 
 close all;
-%clear
-%clc;
+clear
+clc;
 
 % Build a random signal
 N = 3;
@@ -44,8 +44,3 @@ C = C - mean(lambda2) * (v2 * v2');
 v3 = EigenAnalysisPowerMethod(C, v0, Itr);
 scale3 = (Cx*v3)./v3;
 lambda3 = mean(scale3)
-
-C = C - mean(lambda3) * (v3 * v3');
-v4 = EigenAnalysisPowerMethod(C, v0, Itr);
-scale4 = (Cx*v4)./v4;
-lambda4 = mean(scale4)
